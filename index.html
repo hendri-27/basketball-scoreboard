@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Basketball Scoreboard</title>
+    </head>
+    <body>
+        <div class="score-container">
+            <section class="score-section">
+                <div class="team-wrapper">
+                    <h3 class="team-title">HOME</h3>
+                    <div id="home-score">0</div>
+                    <div>
+                        <button class="btn" onclick="addScore('home', 1)">+1</button>
+                        <button class="btn" onclick="addScore('home', 2)">+2</button>
+                        <button class="btn" onclick="addScore('home', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="team-wrapper">
+                    <h3 class="team-title">GUEST</h3>
+                    <div id="guest-score">0</div>
+                    <div>
+                        <button class="btn" onclick="addScore('guest', 1)">+1</button>
+                        <button class="btn" onclick="addScore('guest', 2)">+2</button>
+                        <button class="btn" onclick="addScore('guest', 3)">+3</button>
+                    </div>
+                </div>
+            </section>
+            <!-- TODO: Add Foul Section. Reference: https://www.shutterstock.com/id/image-vector/vector-basketball-scoreboard-57422011-->
+            <section class="action-section">
+                <button class="new-game-btn" onclick="resetGame()">NEW GAME</button>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
