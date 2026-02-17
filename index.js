@@ -21,3 +21,7 @@ function resetGame() {
   homeScoreEl.textContent = homeScore;
   guestScoreEl.textContent = guestScore;
 }
+
+// Expose functions to global scope for inline onclick handlers
+window.addScore = addScore;
+window.resetGame = resetGame;
